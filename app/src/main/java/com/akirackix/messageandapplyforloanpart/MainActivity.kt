@@ -20,15 +20,15 @@ class MainActivity : AppCompatActivity() {
 
     }
     fun showWallet(){
-        val item= Wallet("Salary","40000","1 June 2024")
-        val item1= Wallet("Rent","16000","2 June 2024")
-        val item3= Wallet("Water","2400","4 June 2024")
-        val item4= Wallet("Electricity","600","5 June 2024")
-        val item5= Wallet("Internet","2500","6 Jule 2024")
-        val item6= Wallet("Shopping","3500","7 Jule 2024")
-        val item7= Wallet("Bus Fare","500","8 Jule 2024")
-        val item8= Wallet("Water bill","400","9 July 2024")
-        val item9= Wallet("Token","300","10 July 2024")
+        val item= Wallets("Salary","40000","1 June 2024")
+        val item1= Wallets("Rent","16000","2 June 2024")
+        val item3= Wallets("Water","2400","4 June 2024")
+        val item4= Wallets("Electricity","600","5 June 2024")
+        val item5= Wallets("Internet","2500","6 Jule 2024")
+        val item6= Wallets("Shopping","3500","7 Jule 2024")
+        val item7= Wallets("Bus Fare","500","8 Jule 2024")
+        val item8= Wallets("Water bill","400","9 July 2024")
+        val item9= Wallets("Token","300","10 July 2024")
 
         val wallet= listOf(item,item3,item4,item5,item6,item7,item8,item9,item1)
         val walletAdapter = WalletRecyclerViewerAdapter(wallet)

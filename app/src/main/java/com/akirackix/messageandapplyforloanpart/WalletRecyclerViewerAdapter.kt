@@ -7,8 +7,12 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.gms.wallet.Wallet
 
-
-class WalletRecyclerViewerAdapter (val wallet:List<Wallet>):RecyclerView.Adapter<WalletViewHolder>(){
+data class Wallets(
+    var tvSalary:String,
+    var tvCash3:String,
+    var tvdate:String
+)
+class WalletRecyclerViewerAdapter (val wallet:List<Wallets>):RecyclerView.Adapter<WalletViewHolder>(){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): WalletViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.list_of_money,parent,false)
